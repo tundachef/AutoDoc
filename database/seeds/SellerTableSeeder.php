@@ -14,9 +14,9 @@ class SellerTableSeeder extends Seeder
     public function run()
     {
         DB::table('sellers')->insert([
-            'f_name' => 'al imrun',
-            'l_name' => 'khandakar',
-            'phone' => '01759412381',
+            'f_name' => 'Kasujja',
+            'l_name' => 'Muhammed',
+            'phone' => '0774262923',
             'email' => 'seller@seller.com',
             'image' => 'def.png',
             'password' => bcrypt(12345678),
