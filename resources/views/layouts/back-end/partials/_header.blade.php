@@ -8,10 +8,10 @@
                 @php($e_commerce_logo=\App\Model\BusinessSetting::where(['type'=>'company_web_logo'])->first()->value)
                 <a class="navbar-brand" href="{{route('admin.dashboard.index')}}" aria-label="">
                     <img class="navbar-brand-logo" style="max-height: 42px;"
-                         onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                         onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                          src="{{asset("storage/app/public/company/$e_commerce_logo")}}" alt="Logo">
                     <img class="navbar-brand-logo-mini" style="max-height: 42px;"
-                         onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                         onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                          src="{{asset("storage/app/public/company/$e_commerce_logo")}}"
                          alt="Logo">
                 </a>
@@ -73,7 +73,7 @@
                                             @if($data['code']==$local)
                                                 <img class="{{Session::get('direction') === "rtl" ? 'ml-2' : 'mr-2'}}"
                                                      width="20"
-                                                     src="{{asset('public/assets/front-end')}}/img/flags/{{$data['code']}}.png"
+                                                     src="{{asset('assets/front-end')}}/img/flags/{{$data['code']}}.png"
                                                      alt="Eng">
                                                 {{$data['name']}}
                                             @endif
@@ -88,7 +88,7 @@
                                                         <img
                                                             class="{{Session::get('direction') === "rtl" ? 'ml-2' : 'mr-2'}}"
                                                             width="20"
-                                                            src="{{asset('public/assets/front-end')}}/img/flags/{{$data['code']}}.png"
+                                                            src="{{asset('assets/front-end')}}/img/flags/{{$data['code']}}.png"
                                                             alt="{{$data['name']}}"/>
                                                         <span style="text-transform: capitalize">{{\App\CPU\Helpers::get_language_name($data['code'])}}</span>
                                                     </a>
@@ -154,7 +154,7 @@
                                    }'>
                                 <div class="avatar avatar-sm avatar-circle">
                                     <img class="avatar-img"
-                                         onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                         onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                          src="{{asset('storage/app/public/admin')}}/{{auth('admin')->user()->image}}"
                                          alt="Image Description">
                                     <span class="avatar-status avatar-sm-status avatar-status-success"></span>
@@ -168,7 +168,7 @@
                                     <div class="media align-items-center">
                                         <div class="avatar avatar-sm avatar-circle mr-2">
                                             <img class="avatar-img"
-                                                 onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                                 onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                  src="{{asset('storage/app/public/admin')}}/{{auth('admin')->user()->image}}"
                                                  alt="Image Description">
                                         </div>

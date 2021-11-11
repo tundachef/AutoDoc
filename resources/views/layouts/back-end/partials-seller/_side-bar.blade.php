@@ -39,7 +39,7 @@
                     <!-- Logo -->
                     @php($seller_logo=\App\Model\Shop::where(['seller_id'=>auth('seller')->id()])->first()->image)
                     <a class="navbar-brand" href="{{route('seller.dashboard.index')}}" aria-label="Front">
-                        <img onerror="this.src='{{asset('public/assets/back-end/img/900x400/img1.jpg')}}'"
+                        <img onerror="this.src='{{asset('assets/back-end/img/900x400/img1.jpg')}}'"
                              class="navbar-brand-logo-mini for-seller-logo"
                              src="{{asset("storage/app/public/shop/$seller_logo")}}" alt="Logo">
                     </a>

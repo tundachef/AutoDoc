@@ -14,15 +14,15 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="{{asset('public/assets/back-end')}}/css/vendor.min.css">
-    <link rel="stylesheet" href="{{asset('public/assets/back-end')}}/css/custom.css">
+    <link rel="stylesheet" href="{{asset('assets/back-end/css/vendor.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/back-end/css/custom.css')}}">
 
 
-    <link rel="stylesheet" href="{{asset('public/assets/back-end')}}/vendor/icon-set/style.css">
+    <link rel="stylesheet" href="{{asset('assets/back-end/vendor/icon-set/style.css')}}">
     <!-- CSS Front Template -->
-    <link rel="stylesheet" href="{{asset('public/assets/back-end')}}/css/theme.minc619.css?v=1.0">
+    <link rel="stylesheet" href="{{asset('assets/back-end/css/theme.minc619.css?v=1.0')}}">
     @if(Session::get('direction') === "rtl")
-        <link rel="stylesheet" href="{{asset('public/assets/back-end')}}/css/menurtl.css">
+        <link rel="stylesheet" href="{{asset('assets/back-end/css/menurtl.css')}}">
     @endif
     @stack('css_or_js')
     <style>
@@ -161,8 +161,8 @@
         }
 
     </style>
-    <script src="{{asset('public/assets/back-end')}}/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
-    <link rel="stylesheet" href="{{asset('public/assets/back-end')}}/css/toastr.css">
+    <script src="{{asset('assets/back-end/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js')}}"></script>
+    <link rel="stylesheet" href="{{asset('assets/back-end/css/toastr.css')}}">
 </head>
 
 <body class="footer-offset">
@@ -174,7 +174,7 @@
         <div class="col-md-12">
             <div id="loading" style="display: none;">
                 <div style="position: fixed;z-index: 9999; left: 40%;top: 37% ;width: 100%">
-                    <img width="200" src="{{asset('public/assets/front-end/img/loader.gif')}}">
+                    <img width="200" src="{{asset('assets/front-end/img/loader.gif')}}">
                 </div>
             </div>
         </div>
@@ -201,16 +201,16 @@
 <!-- ========== END MAIN CONTENT ========== -->
 
 <!-- ========== END SECONDARY CONTENTS ========== -->
-<script src="{{asset('public/assets/back-end')}}/js/custom.js"></script>
+<script src="{{asset('assets/back-end/js/custom.js')}}"></script>
 <!-- JS Implementing Plugins -->
 
 @stack('script')
 
 <!-- JS Front -->
-<script src="{{asset('public/assets/back-end')}}/js/vendor.min.js"></script>
-<script src="{{asset('public/assets/back-end')}}/js/theme.min.js"></script>
-<script src="{{asset('public/assets/back-end')}}/js/sweet_alert.js"></script>
-<script src="{{asset('public/assets/back-end')}}/js/toastr.js"></script>
+<script src="{{asset('assets/back-end/js/vendor.min.js')}}"></script>
+<script src="{{asset('assets/back-end/js/theme.min.js')}}"></script>
+<script src="{{asset('assets/back-end/js/sweet_alert.js')}}"></script>
+<script src="{{asset('assets/back-end/js/toastr.js')}}"></script>
 {!! Toastr::message() !!}
 
 @if ($errors->any())
@@ -345,7 +345,7 @@
 @stack('script_2')
 
 
-<script src="{{asset('public/assets/back-end')}}/js/bootstrap.min.js"></script>
+<script src="{{asset('assets/back-end/js/bootstrap.min.js')}}"></script>
 
 <script>
     $("#search-bar-input").keyup(function () {
@@ -410,12 +410,12 @@
 
 <!-- IE Support -->
 <script>
-    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('public/assets/back-end')}}/vendor/babel-polyfill/polyfill.min.js"><\/script>');
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('assets/back-end/vendor/babel-polyfill/polyfill.min.js')}}"><\/script>');
 </script>
 @stack('script')
 
 {{--ck editor--}}
-<script src="{{ asset('public/ckeditor/ckeditor.js')}}"></script>
+<script src="{{ asset('ckeditor/ckeditor.js')}}"></script>
 <script>CKEDITOR.replace('editor');</script>
 {{--ck editor--}}
 

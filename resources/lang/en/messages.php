@@ -725,4 +725,5 @@
   'like_for_BD_880' => 'Like for BD 880',
   'resubmit' => 'Resubmit',
   'text_updated_successfully' => 'Text updated successfully',
+  'frequently_asked_question' => 'Frequently asked question',
 );
