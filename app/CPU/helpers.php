@@ -617,6 +617,7 @@ class Helpers
         ));
         $response = curl_exec($curl);
         $data = json_decode($response, true);
+        // dd($data);
         return $data;
     }
 
