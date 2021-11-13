@@ -13,7 +13,7 @@
     <meta property="twitter:url" content="{{env('APP_URL')}}">
     <meta property="twitter:description" content="{!! substr($web_config['about']->value,0,100) !!}">
 
-    <link rel="stylesheet" href="{{asset('public/assets/front-end')}}/css/home.css"/>
+    <link rel="stylesheet" href="{{asset('assets/front-end/css/home.css')}}"/>
     <style>
         .media {
             background: white;
@@ -310,7 +310,7 @@
                                              style="min-width: 110px">
                                             <img style="height: 130px!important;"
                                                  src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$deal->product['thumbnail']}}"
-                                                 onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"/>
+                                                 onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"/>
                                         </div>
                                         <div class="flash_deal_product_details pl-2 pr-1 d-flex align-items-center">
                                             <div>
@@ -374,7 +374,7 @@
                             <div class="brand_div d-flex align-items-center justify-content-center"
                                  style="height:100px">
                                 <img
-                                    onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                    onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                     src="{{asset("storage/app/public/brand/$brand->image")}}" alt="{{$brand->name}}">
                             </div>
                         </a>
@@ -443,7 +443,7 @@
                                                                class="image_center">
                                                                 <img
                                                                     src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$product['thumbnail']}}"
-                                                                    onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                                                    onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                                     class="d-block w-100" alt="...">
                                                             </a>
                                                         </div>
@@ -494,7 +494,7 @@
                         <div class="d-flex justify-content-center align-items-center" style="padding-top: 37px">
                             <img style="height: 206px;"
                                  src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$deal_of_the_day->product['thumbnail']}}"
-                                 onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                 onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                  alt="">
                         </div>
                         <div style="text-align: center; padding-top: 26px;">
@@ -525,7 +525,7 @@
                             <div class="d-flex justify-content-center align-items-center" style="padding-top: 55px">
                                 <img style="height: 206px;"
                                      src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$product['thumbnail']}}"
-                                     onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                     onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                      alt="">
                             </div>
                             <div style="text-align: center; padding-top: 60px;" class="pb-2">
@@ -539,20 +539,20 @@
                 <div class="container mt-2">
                     <div class="row p-0">
                         <div class="col-md-3 p-0 text-center mobile-padding">
-                            <img style="height: 29px;" src="{{asset("public/assets/front-end/png/delivery.png")}}" alt="">
+                            <img style="height: 29px;" src="{{asset("assets/front-end/png/delivery.png")}}" alt="">
                             <div class="deal-title">3 Days <br><span>Fast Delivery</span></div>
                         </div>
 
                         <div class="col-md-3 p-0 text-center">
-                            <img style="height: 29px;" src="{{asset("public/assets/front-end/png/money.png")}}" alt="">
+                            <img style="height: 29px;" src="{{asset("assets/front-end/png/money.png")}}" alt="">
                             <div class="deal-title">Money Back <br><span>Gurrantey</span></div>
                         </div>
                         <div class="col-md-3 p-0 text-center">
-                            <img style="height: 29px;" src="{{asset("public/assets/front-end/png/Genuine.png")}}" alt="">
+                            <img style="height: 29px;" src="{{asset("assets/front-end/png/Genuine.png")}}" alt="">
                             <div class="deal-title">100% Genuine<br><span>Product</span></div>
                         </div>
                         <div class="col-md-3 p-0 text-center">
-                            <img style="height: 29px;" src="{{asset("public/assets/front-end/png/Payment.png")}}" alt="">
+                            <img style="height: 29px;" src="{{asset("assets/front-end/png/Payment.png")}}" alt="">
                             <div class="deal-title">Authentic<br><span>Payment</span></div>
                         </div>
                     </div>
@@ -605,7 +605,7 @@
                     <div class="category_div" style="height: 132px; width: 100%;">
                         <a href="{{route('products',['id'=> $category['id'],'data_from'=>'category','page'=>1])}}">
                             <img style="vertical-align: middle; padding: 16%"
-                                 onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                 onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                  src="{{asset("storage/app/public/category/$category->icon")}}"
                                  alt="{{$category->name}}">
                             <p class="text-center small"
@@ -642,7 +642,7 @@
                                     <a href="{{route('shopView',['id'=>$seller['id']])}}">
                                         <img
                                             style="vertical-align: middle; padding: 2%;width:75px;height: 75px;border-radius: 50%"
-                                            onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                            onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                             src="{{asset("storage/app/public/shop")}}/{{$seller->shop->image}}"
                                             alt="{{$seller->name}}">
                                         <p class="text-center small font-weight-bold">{{Str::limit($seller->name, 14)}}</p>
@@ -711,7 +711,7 @@
                                 <a class="d-block {{Session::get('direction') === "rtl" ? 'ml-2' : 'mr-2'}}"
                                    href="{{route('product',$bestSell->product->slug)}}">
                                     <img style="height: 54px; width: 54px"
-                                         onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                         onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                          src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$bestSell->product['thumbnail']}}"
                                          alt="Product"/>
                                 </a>
@@ -757,7 +757,7 @@
                                  data-href="{{route('product',$product->slug)}}">
                                 <a class="d-block {{Session::get('direction') === "rtl" ? 'ml-2' : 'mr-2'}}" href="{{route('product',$product->slug)}}">
                                     <img style="height: 54px; width: 54px"
-                                         onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                         onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                          src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$product['thumbnail']}}"
                                          alt="Product"/>
                                 </a>
@@ -801,7 +801,7 @@
                                  data-href="{{route('product',$top->product->slug)}}">
                                 <a class="d-block {{Session::get('direction') === "rtl" ? 'ml-2' : 'mr-2'}}" href="{{route('product',$top->product->slug)}}">
                                     <img style="height: 54px; width: 54px"
-                                         onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                         onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                          src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$top->product['thumbnail']}}"
                                          alt="Product"/>
                                 </a>

@@ -69,7 +69,7 @@
                             <div class="card-body shadow">
                                 <a href="{{route('shopView',['id'=>$seller['id']])}}">
                                     <img style="vertical-align: middle;height: 6rem; border-radius: 3%;"
-                                         onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                         onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                          src="{{asset("storage/app/public/shop/$seller->image")}}"
                                          alt="{{$seller->name}}">
                                     <div class="text-center text-dark">
@@ -94,5 +94,5 @@
 @endsection
 
 @push('script')
-    <script src="{{asset('public/assets/front-end')}}/vendor/nouislider/distribute/nouislider.min.js"></script>
+    <script src="{{asset('assets/front-end/vendor/nouislider/distribute/nouislider.min.js')}}"></script>
 @endpush

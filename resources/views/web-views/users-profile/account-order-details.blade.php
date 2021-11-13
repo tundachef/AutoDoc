@@ -262,7 +262,7 @@
                                              onclick="location.href='{{route('product',$product['slug'])}}'">
                                             <td width="30%" class="for-tab-img">
                                                 <img class="d-block"
-                                                     onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                                     onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                      src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$product['thumbnail']}}"
                                                      alt="VR Collection" width="60">
                                             </td>
@@ -483,7 +483,7 @@
 
 
 @push('script')
-    <script src="{{asset('public/assets/front-end/js/spartan-multi-image-picker.js')}}"></script>
+    <script src="{{asset('assets/front-end/js/spartan-multi-image-picker.js')}}"></script>
     <script type="text/javascript">
         $(function () {
             $(".coba").spartanMultiImagePicker({
@@ -493,7 +493,7 @@
                 groupClassName: 'col-md-4',
                 maxFileSize: '',
                 placeholderImage: {
-                    image: '{{asset('public/assets/front-end/img/image-place-holder.png')}}',
+                    image: '{{asset('assets/front-end/img/image-place-holder.png')}}',
                     width: '100%'
                 },
                 dropFileLabel: "Drop Here",

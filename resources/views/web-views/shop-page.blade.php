@@ -28,7 +28,7 @@
     <meta property="twitter:description" content="{!! substr($web_config['about']->value,0,100) !!}">
 
 
-    <link href="{{asset('public/assets/front-end')}}/css/home.css" rel="stylesheet">
+    <link href="{{asset('assets/front-end/css/home.css')}}" rel="stylesheet">
     <style>
         .headerTitle {
             font-size: 34px;
@@ -200,13 +200,13 @@
                     @if($shop['id'] != 0)
                         <img style="width:100%; height: auto; max-height: 13.75rem; border-radius: 3px;"
                              src="{{asset('storage/app/public/shop/banner')}}/{{$shop->banner}}"
-                             onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                             onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                              alt="">
                     @else
                         @php($banner=\App\CPU\Helpers::get_business_settings('shop_banner'))
                         <img style="width:100%; height: auto; max-height: 13.75rem; border-radius: 3px;"
                              src="{{asset("storage/app/public/shop")}}/{{$banner??""}}"
-                             onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                             onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                              alt="">
                     @endif
                 </div>
@@ -228,12 +228,12 @@
                                 @if($shop['id'] != 0)
                                     <img style="height: 65px; border-radius: 2px;"
                                          src="{{asset('storage/app/public/shop')}}/{{$shop->image}}"
-                                         onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                         onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                          alt="">
                                 @else
                                     <img style="height: 65px; border-radius: 2px;"
                                          src="{{asset('storage/app/public/company')}}/{{$web_config['fav_icon']->value}}"
-                                         onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                         onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                          alt="">
                                 @endif
                             </div>

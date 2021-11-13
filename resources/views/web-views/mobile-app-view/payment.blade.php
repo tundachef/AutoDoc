@@ -17,11 +17,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="">
     <link rel="icon" type="image/png" sizes="16x16" href="">
 
-    <link rel="stylesheet" href="{{asset('public/assets/back-end')}}/css/toastr.css"/>
+    <link rel="stylesheet" href="{{asset('assets/back-end')}}/css/toastr.css"/>
     <!-- Main Theme Styles + Bootstrap-->
-    <link rel="stylesheet" media="screen" href="{{asset('public/assets/front-end')}}/css/theme.min.css">
-    <link rel="stylesheet" media="screen" href="{{asset('public/assets/front-end')}}/css/slick.css">
-    <link rel="stylesheet" href="{{asset('public/assets/back-end')}}/css/toastr.css"/>
+    <link rel="stylesheet" media="screen" href="{{asset('assets/front-end')}}/css/theme.min.css">
+    <link rel="stylesheet" media="screen" href="{{asset('assets/front-end')}}/css/slick.css">
+    <link rel="stylesheet" href="{{asset('assets/back-end')}}/css/toastr.css"/>
     @stack('css_or_js')
 
     {{--stripe--}}
@@ -44,7 +44,7 @@
                             <input type="hidden" value="{{ csrf_token() }}" name="_token"/>
                             <button class="btn btn-block" type="submit">
                                 <img width="150"
-                                     src="{{asset('public/assets/front-end/img/sslcomz.png')}}"/>
+                                     src="{{asset('assets/front-end/img/sslcomz.png')}}"/>
                             </button>
                         </form>
                     </div>
@@ -62,7 +62,7 @@
                             {{ csrf_field() }}
                             <button class="btn btn-block" type="submit">
                                 <img width="150"
-                                     src="{{asset('public/assets/front-end/img/paypal.png')}}"/>
+                                     src="{{asset('assets/front-end/img/paypal.png')}}"/>
                             </button>
                         </form>
                     </div>
@@ -134,7 +134,7 @@
                         <button class="btn btn-block" type="button"
                                 onclick="$('.razorpay-payment-button').click()">
                             <img width="150"
-                                 src="{{asset('public/assets/front-end/img/razor.png')}}"/>
+                                 src="{{asset('assets/front-end/img/razor.png')}}"/>
                         </button>
                     </div>
                 </div>
@@ -179,7 +179,7 @@
                         <button class="btn btn-block" type="button"
                                 onclick="$('.paystack-payment-button').click()">
                             <img width="100"
-                                 src="{{asset('public/assets/front-end/img/paystack.png')}}"/>
+                                 src="{{asset('assets/front-end/img/paystack.png')}}"/>
                         </button>
                     </div>
                 </div>
@@ -220,7 +220,7 @@
                         <button class="btn btn-block" type="button"
                                 onclick="document.order.submit()">
                             <img width="100"
-                                 src="{{asset('public/assets/front-end/img/senangpay.png')}}"/>
+                                 src="{{asset('assets/front-end/img/senangpay.png')}}"/>
                         </button>
                     </div>
                 </div>
@@ -229,11 +229,11 @@
     </div>
 </div>
 
-<script src="{{asset('public/assets/front-end')}}/vendor/jquery/dist/jquery-2.2.4.min.js"></script>
-<script src="{{asset('public/assets/front-end')}}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{asset('assets/front-end/vendor/jquery/dist/jquery-2.2.4.min.js')}}"></script>
+<script src="{{asset('assets/front-end/vendor/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
 {{--Toastr--}}
-<script src={{asset("public/assets/back-end/js/toastr.js")}}></script>
-<script src="{{asset('public/assets/front-end')}}/js/sweet_alert.js"></script>
+<script src={{asset("assets/back-end/js/toastr.js")}}></script>
+<script src="{{asset('assets/front-end/js/sweet_alert.js')}}"></script>
 
 <script>
     setInterval(function () {

@@ -13,7 +13,7 @@
     <meta property="twitter:url" content="{{env('APP_URL')}}">
     <meta property="twitter:description" content="{!! substr($web_config['about']->value,0,100) !!}">
     <link rel="stylesheet" media="screen"
-          href="{{asset('public/assets/front-end')}}/vendor/nouislider/distribute/nouislider.min.css"/>
+          href="{{asset('assets/front-end/vendor/nouislider/distribute/nouislider.min.css')}}"/>
     <style>
         .order-track {
             height: 400px;
@@ -79,7 +79,7 @@
 
 
 @push('script')
-    <script src="{{asset('public/assets/front-end')}}/vendor/nouislider/distribute/nouislider.min.js">
+    <script src="{{asset('assets/front-end/vendor/nouislider/distribute/nouislider.min.js')}}">
     </script>
 
 @endpush

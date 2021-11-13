@@ -71,7 +71,7 @@
                     <div class="carousel-item {{$key==0?'active':''}}">
                         <a href="{{$banner['url']}}">
                             <img class="d-block w-100" style="max-height: 350px"
-                                 onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                 onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                  src="{{asset('storage/app/public/banner')}}/{{$banner['photo']}}"
                                  alt="">
                         </a>
@@ -97,7 +97,7 @@
                         <a data-toggle="modal" data-target="#quick_banner{{$banner->id}}"
                            style="cursor: pointer;">
                             <img class="d-block mx-auto footer_banner_img"
-                                 onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                 onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                  src="{{asset('storage/app/public/banner')}}/{{$banner['photo']}}"
                                  width="315">
                         </a>
@@ -118,7 +118,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <img class="d-block mx-auto"
-                                         onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                         onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                          src="{{asset('storage/app/public/banner')}}/{{$banner['photo']}}">
                                     @if ($banner->url!="")
                                         <div class="text-center mt-2">

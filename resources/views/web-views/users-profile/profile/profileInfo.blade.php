@@ -278,7 +278,7 @@ a:hover{
 
 
                        <img style=" border-radius: 50px;   margin-left: 7px;" height="80" width="80" class="rounded-circle border"
-                            src="{{asset('public/assets/front-end')}}/img/contacts/blank.jpg"
+                            src="{{asset('assets/front-end')}}/img/contacts/blank.jpg"
                             >
 
                 <div class="col-md-10">

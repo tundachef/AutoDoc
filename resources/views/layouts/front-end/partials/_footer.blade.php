@@ -54,7 +54,7 @@
                     <a class="d-inline-block mt-n1" href="{{route('home')}}">
                         <img width="250" style="height: 60px!important;"
                              src="{{asset("storage/app/public/company/")}}/{{ $web_config['footer_logo']->value }}"
-                             onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                             onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                              alt="{{ $web_config['name']->value }}"/>
                     </a>
                 </div>
@@ -87,7 +87,7 @@
                             <div class="{{Session::get('direction') === "rtl" ? 'ml-2' : 'mr-2'}} mb-2">
                                 <a class="" href="{{ $ios['link'] }}" role="button"><img
                                         style="height: 32px;"
-                                        src="{{asset("public/assets/front-end/png/apple_app.png")}}"
+                                        src="{{asset("assets/front-end/png/apple_app.png")}}"
                                         alt="">
                                 </a>
                             </div>
@@ -97,7 +97,7 @@
                             <div class="{{Session::get('direction') === "rtl" ? 'ml-2' : 'mr-2'}} mb-2">
                                 <a href="{{ $android['link'] }}" role="button">
                                     <img style="height: 32px;"
-                                         src="{{asset("public/assets/front-end/png/google_app.png")}}"
+                                         src="{{asset("assets/front-end/png/google_app.png")}}"
                                          alt="">
                                 </a>
                             </div>

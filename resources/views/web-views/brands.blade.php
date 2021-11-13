@@ -43,7 +43,7 @@
                                 <div class="brand_div d-flex align-items-center justify-content-center"
                                  style="height: 200px">
                                     <img
-                                        onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                        onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                         src="{{asset("storage/app/public/brand/$brand->image")}}"
                                         alt="{{$brand->name}}">
                                 </div>
@@ -66,5 +66,5 @@
 @endsection
 
 @push('script')
-    <script src="{{asset('public/assets/front-end')}}/vendor/nouislider/distribute/nouislider.min.js"></script>
+    <script src="{{asset('assets/front-end/vendor/nouislider/distribute/nouislider.min.js')}}"></script>
 @endpush

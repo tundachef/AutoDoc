@@ -46,7 +46,7 @@
                                         <a class="btn btn-block"
                                            href="{{route('checkout-complete',['payment_method'=>'cash_on_delivery'])}}">
                                             <img width="150" style="margin-top: -10px"
-                                                 src="{{asset('public/assets/front-end/img/cod.png')}}"/>
+                                                 src="{{asset('assets/front-end/img/cod.png')}}"/>
                                         </a>
                                     </div>
                                 </div>
@@ -62,7 +62,7 @@
                                             <input type="hidden" value="{{ csrf_token() }}" name="_token"/>
                                             <button class="btn btn-block" type="submit">
                                                 <img width="150"
-                                                     src="{{asset('public/assets/front-end/img/sslcomz.png')}}"/>
+                                                     src="{{asset('assets/front-end/img/sslcomz.png')}}"/>
                                             </button>
                                         </form>
                                     </div>
@@ -80,7 +80,7 @@
                                             {{ csrf_field() }}
                                             <button class="btn btn-block" type="submit">
                                                 <img width="150"
-                                                     src="{{asset('public/assets/front-end/img/paypal.png')}}"/>
+                                                     src="{{asset('assets/front-end/img/paypal.png')}}"/>
                                             </button>
                                         </form>
                                     </div>
@@ -152,7 +152,7 @@
                                         <button class="btn btn-block" type="button"
                                                 onclick="$('.razorpay-payment-button').click()">
                                             <img width="150"
-                                                 src="{{asset('public/assets/front-end/img/razor.png')}}"/>
+                                                 src="{{asset('assets/front-end/img/razor.png')}}"/>
                                         </button>
                                     </div>
                                 </div>
@@ -197,7 +197,7 @@
                                         <button class="btn btn-block" type="button"
                                                 onclick="$('.paystack-payment-button').click()">
                                             <img width="100"
-                                                 src="{{asset('public/assets/front-end/img/paystack.png')}}"/>
+                                                 src="{{asset('assets/front-end/img/paystack.png')}}"/>
                                         </button>
                                     </div>
                                 </div>
@@ -239,7 +239,7 @@
                                         <button class="btn btn-block" type="button"
                                                 onclick="document.order.submit()">
                                             <img width="100"
-                                                 src="{{asset('public/assets/front-end/img/senangpay.png')}}"/>
+                                                 src="{{asset('assets/front-end/img/senangpay.png')}}"/>
                                         </button>
                                     </div>
                                 </div>

@@ -42,7 +42,7 @@
     @endif
     <meta property="twitter:url" content="{{route('product',[$product->slug])}}">
 
-    <link rel="stylesheet" href="{{asset('public/assets/front-end/css/product-details.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/front-end/css/product-details.css')}}"/>
     <style>
         .msg-option {
             display: none;
@@ -193,7 +193,7 @@
                                     class="cz-preview-item d-flex align-items-center justify-content-center {{$key==0?'active':''}}"
                                     id="image{{$key}}">
                                     <img class="cz-image-zoom img-responsive"
-                                         onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                         onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                          src="{{asset("storage/app/public/product/$photo")}}"
                                          data-zoom="{{asset("storage/app/public/product/$photo")}}"
                                          alt="Product image" width="">
@@ -213,7 +213,7 @@
                                                     <a class="cz-thumblist-item  {{$key==0?'active':''}} d-flex align-items-center justify-content-center "
                                                        href="#image{{$key}}">
                                                         <img
-                                                            onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                                            onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                             src="{{asset("storage/app/public/product/$photo")}}"
                                                             alt="Product thumb">
                                                     </a>
@@ -463,7 +463,7 @@
                             <a href="#" class="d-flex justify-content-center">
                                 <img style="height: 65px; width: 65px; border-radius: 50%"
                                      src="{{asset('storage/app/public/shop')}}/{{$product->seller->shop->image}}"
-                                     onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                     onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                      alt="">
                             </a>
                         </div>
@@ -544,7 +544,7 @@
                             <a href="{{ route('shopView',[0]) }}" class="d-flex justify-content-center">
                                 <img style="height: 65px;width: 65px; border-radius: 50%"
                                      src="{{asset("storage/app/public/company")}}/{{$web_config['fav_icon']->value}}"
-                                     onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                     onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                      alt="">
                             </a>
                         </div>
@@ -784,7 +784,7 @@
                                                                 class="media media-ie-fix align-items-center {{Session::get('direction') === "rtl" ? 'ml-4 pl-2' : 'mr-4 pr-2'}}">
                                                                 <img style="max-height: 64px;"
                                                                      class="rounded-circle" width="64"
-                                                                     onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                                                     onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                                      src="{{asset("storage/app/public/profile/".(isset($productReview->user)?$productReview->user->image:'not exist'))}}"
                                                                      alt="{{isset($productReview->user)?$productReview->user->f_name:'not exist'}}"/>
                                                                 <div
@@ -818,7 +818,7 @@
                                                                         style="cursor: pointer;border-radius: 5px;border:1px;border-color: #7a6969; height: 67px ; margin-{{Session::get('direction') === "rtl" ? 'left' : 'right'}}: 5px;"
                                                                         onclick="showInstaImage('{{asset("storage/app/public/$photo")}}')"
                                                                         class="cz-image-zoom"
-                                                                        onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                                                        onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                                         src="{{asset("storage/app/public/$photo")}}"
                                                                         alt="Product review" width="67">
                                                                 @endforeach

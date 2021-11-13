@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <link rel="stylesheet" media="screen"
-          href="{{asset('public/assets/front-end')}}/vendor/nouislider/distribute/nouislider.min.css"/>
+          href="{{asset('assets/front-end/vendor/nouislider/distribute/nouislider.min.css')}}"/>
 @endpush
 
 @section('content')
@@ -19,11 +19,11 @@
                 <div class="modal-body">
                     <div class="custom-control custom-radio mb-4">
                         <input class="custom-control-input" type="radio" id="paypal" name="payment-method">
-                        <label class="custom-control-label" for="paypal">PayPal<img class="d-inline-block align-middle {{Session::get('direction') === "rtl" ? 'mr-2' : 'ml-2'}}" src="{{asset('public/assets/front-end')}}/img/card-paypal.png" width="39" alt="PayPal"></label>
+                        <label class="custom-control-label" for="paypal">PayPal<img class="d-inline-block align-middle {{Session::get('direction') === "rtl" ? 'mr-2' : 'ml-2'}}" src="{{asset('assets/front-end/img/card-paypal.png')}}" width="39" alt="PayPal"></label>
                     </div>
                     <div class="custom-control custom-radio mb-4">
                         <input class="custom-control-input" type="radio" id="card" name="payment-method" checked>
-                        <label class="custom-control-label" for="card">Credit / Debit card<img class="d-inline-block align-middle {{Session::get('direction') === "rtl" ? 'mr-2' : 'ml-2'}}" src="{{asset('public/assets/front-end')}}/img/cards.png" width="187" alt="Credit card"></label>
+                        <label class="custom-control-label" for="card">Credit / Debit card<img class="d-inline-block align-middle {{Session::get('direction') === "rtl" ? 'mr-2' : 'ml-2'}}" src="{{asset('assets/front-end/img/cards.png')}}" width="187" alt="Credit card"></label>
                     </div>
                     <div class="row">
                         <div class="form-group col-sm-6">
@@ -93,7 +93,7 @@
                         <tbody>
                         <tr>
                             <td class="py-3 align-middle">
-                                <div class="media align-items-center"><img class="{{Session::get('direction') === "rtl" ? 'ml-2' : 'mr-2'}}" src="{{asset('public/assets/front-end')}}/img/card-visa.png" width="39" alt="Visa">
+                                <div class="media align-items-center"><img class="{{Session::get('direction') === "rtl" ? 'ml-2' : 'mr-2'}}" src="{{asset('assets/front-end/img/card-visa.png')}}" width="39" alt="Visa">
                                     <div class="media-body"><span class="font-weight-medium text-heading {{Session::get('direction') === "rtl" ? 'ml-1' : 'mr-1'}}">Visa</span>ending in 4999<span class="align-middle badge badge-info {{Session::get('direction') === "rtl" ? 'mr-2' : 'ml-2'}}">Primary</span></div>
                                 </div>
                             </td>
@@ -115,5 +115,5 @@
 @endsection
 
 @push('script')
-    <script src="{{asset('public/assets/front-end')}}/vendor/nouislider/distribute/nouislider.min.js"></script>
+    <script src="{{asset('assets/front-end/vendor/nouislider/distribute/nouislider.min.js')}}"></script>
 @endpush

@@ -126,7 +126,7 @@
                         <div class="d-flex align-items-center">
                             <img
                                 class="avatar avatar-xxl avatar-4by3 {{Session::get('direction') === "rtl" ? 'ml-4' : 'mr-4'}}"
-                                onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                 src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$product['thumbnail']}}"
                                 alt="Image Description">
 
@@ -276,7 +276,7 @@
                                  <div class="card">
                                      <div class="card-body">
                                          <img style="width: 100%"
-                                              onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
+                                              onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                               src="{{asset("storage/app/public/product/$photo")}}" alt="Product image">
 
                                      </div>
