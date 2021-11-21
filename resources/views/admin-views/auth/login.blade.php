@@ -42,7 +42,7 @@
         <label class="badge badge-soft-success float-right" style="z-index: 9;position: absolute;right: 0.5rem;top: 0.5rem;">Software version : {{ env('SOFTWARE_VERSION') }}</label>
         @php($e_commerce_logo=\App\Model\BusinessSetting::where(['type'=>'company_web_logo'])->first()->value)
         <a class="d-flex justify-content-center mb-5" href="javascript:">
-            <img class="z-index-2" src="{{asset("storage/app/public/company/".$e_commerce_logo)}}" alt="Logo"
+            <img class="z-index-2" src="{{asset("storage/company/".$e_commerce_logo)}}" alt="Logo"
                  onerror="this.src='{{asset('assets/back-end/img/400x400/img2.jpg')}}'"
                  style="width: 8rem;">
         </a>

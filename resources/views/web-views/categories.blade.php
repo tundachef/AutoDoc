@@ -3,12 +3,12 @@
 @section('title','All Category Page')
 
 @push('css_or_js')
-    <meta property="og:image" content="{{asset('storage/app/public/company')}}/{{$web_config['web_logo']->value}}"/>
+    <meta property="og:image" content="{{asset('storage/company')}}/{{$web_config['web_logo']->value}}"/>
     <meta property="og:title" content="Categories of {{$web_config['name']->value}} "/>
     <meta property="og:url" content="{{env('APP_URL')}}">
     <meta property="og:description" content="{!! substr($web_config['about']->value,0,100) !!}">
 
-    <meta property="twitter:card" content="{{asset('storage/app/public/company')}}/{{$web_config['web_logo']->value}}"/>
+    <meta property="twitter:card" content="{{asset('storage/company')}}/{{$web_config['web_logo']->value}}"/>
     <meta property="twitter:title" content="Categories of {{$web_config['name']->value}}"/>
     <meta property="twitter:url" content="{{env('APP_URL')}}">
     <meta property="twitter:description" content="{!! substr($web_config['about']->value,0,100) !!}">
@@ -46,7 +46,7 @@
             <div class="col-lg-3 col-md-4">
                 @foreach(\App\CPU\CategoryManager::parents() as $category)
                     <div class="card-header mb-2 p-2 side-category-bar" onclick="get_categories('{{route('category-ajax',[$category['id']])}}')">
-                        <img src="{{asset("storage/app/public/category/$category->icon")}}" onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'" style="width: 18px; height: 18px; margin-right: 5px;">
+                        <img src="{{asset("storage/category/$category->icon")}}" onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'" style="width: 18px; height: 18px; margin-right: 5px;">
                         {{-- <label class="ml-2 category-name-{{$key}}" style="cursor: pointer"> --}}
                             {{$category['name']}}
                         {{-- </label> --}}

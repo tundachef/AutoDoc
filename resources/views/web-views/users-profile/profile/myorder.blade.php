@@ -362,7 +362,7 @@ a:hover{
                                <tr>
                                     <div class="row">
                                         <div class="col-md-6">
-                                              <td width="30%"> <img  src="{{asset("storage/app/public/product/th03.jpg")}}" width="100"> </td>
+                                              <td width="30%"> <img  src="{{asset("storage/product/th03.jpg")}}" width="100"> </td>
                                     <td width="60%"> <span class="font-name">Bee Willow Home Hand-quilted Velvet Quiit Set</span>
                                         <div class="product-qty"> <span class="d-block">Size: XL</span></div>
                                     </td>
@@ -381,7 +381,7 @@ a:hover{
                                      <tr>
                                     <div class="row">
                                         <div class="col-md-6">
-                                              <td width="30%"> <img  src="{{asset("storage/app/public/product/th03.jpg")}}" width="100"> </td>
+                                              <td width="30%"> <img  src="{{asset("storage/product/th03.jpg")}}" width="100"> </td>
                                     <td width="60%"> <span class="font-name">Bee Willow Home Hand-quilted Velvet Quiit Set</span>
                                         <div class="product-qty"> <span class="d-block">Size: XL</span></div>
                                     </td>
@@ -400,7 +400,7 @@ a:hover{
                                      <tr>
                                     <div class="row">
                                         <div class="col-md-6">
-                                              <td width="30%"> <img  src="{{asset("storage/app/public/product/th03.jpg")}}" width="100"> </td>
+                                              <td width="30%"> <img  src="{{asset("storage/product/th03.jpg")}}" width="100"> </td>
                                     <td width="60%"> <span class="font-name">Bee Willow Home Hand-quilted Velvet Quiit Set</span>
                                         <div class="product-qty"> <span class="d-block">Size: XL</span></div>
                                     </td>
@@ -419,7 +419,7 @@ a:hover{
                                    <tr>
                                     <div class="row">
                                         <div class="col-md-6">
-                                              <td width="30%"> <img  src="{{asset("storage/app/public/product/th03.jpg")}}" width="100"> </td>
+                                              <td width="30%"> <img  src="{{asset("storage/product/th03.jpg")}}" width="100"> </td>
                                     <td width="60%"> <span class="font-name">Bee Willow Home Hand-quilted Velvet Quiit Set</span>
                                         <div class="product-qty"> <span class="d-block">Size: XL</span></div>
                                     </td>
@@ -501,7 +501,7 @@ a:hover{
                                   <tr>
                                        <div class="row">
                                            <div class="col-md-6">
-                                                 <td width="30%"> <img  src="{{asset("storage/app/public/product/th03.jpg")}}" width="100"> </td>
+                                                 <td width="30%"> <img  src="{{asset("storage/product/th03.jpg")}}" width="100"> </td>
                                        <td width="60%"> <span class="font-name">Bee Willow Home Hand-quilted Velvet Quiit Set</span>
                                            <div class="product-qty"> <span class="d-block">Size: XL</span></div>
                                        </td>
@@ -520,7 +520,7 @@ a:hover{
                                         <tr>
                                        <div class="row">
                                            <div class="col-md-6">
-                                                 <td width="30%"> <img  src="{{asset("storage/app/public/product/th03.jpg")}}" width="100"> </td>
+                                                 <td width="30%"> <img  src="{{asset("storage/product/th03.jpg")}}" width="100"> </td>
                                        <td width="60%"> <span class="font-name">Bee Willow Home Hand-quilted Velvet Quiit Set</span>
                                            <div class="product-qty"> <span class="d-block">Size: XL</span></div>
                                        </td>
@@ -539,7 +539,7 @@ a:hover{
                                         <tr>
                                        <div class="row">
                                            <div class="col-md-6">
-                                                 <td width="30%"> <img  src="{{asset("storage/app/public/product/th03.jpg")}}" width="100"> </td>
+                                                 <td width="30%"> <img  src="{{asset("storage/product/th03.jpg")}}" width="100"> </td>
                                        <td width="60%"> <span class="font-name">Bee Willow Home Hand-quilted Velvet Quiit Set</span>
                                            <div class="product-qty"> <span class="d-block">Size: XL</span></div>
                                        </td>
@@ -558,7 +558,7 @@ a:hover{
                                       <tr>
                                        <div class="row">
                                            <div class="col-md-6">
-                                                 <td width="30%"> <img  src="{{asset("storage/app/public/product/th03.jpg")}}" width="100"> </td>
+                                                 <td width="30%"> <img  src="{{asset("storage/product/th03.jpg")}}" width="100"> </td>
                                        <td width="60%"> <span class="font-name">Bee Willow Home Hand-quilted Velvet Quiit Set</span>
                                            <div class="product-qty"> <span class="d-block">Size: XL</span></div>
                                        </td>

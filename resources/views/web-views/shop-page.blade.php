@@ -4,23 +4,23 @@
 
 @push('css_or_js')
     @if($shop['id'] != 0)
-        <meta property="og:image" content="{{asset('storage/app/public/shop')}}/{{$shop->image}}"/>
+        <meta property="og:image" content="{{asset('storage/shop')}}/{{$shop->image}}"/>
         <meta property="og:title" content="{{ $shop->name}} "/>
         <meta property="og:url" content="{{route('shopView',[$shop['id']])}}">
     @else
-        <meta property="og:image" content="{{asset('storage/app/public/company')}}/{{$web_config['fav_icon']->value}}"/>
+        <meta property="og:image" content="{{asset('storage/company')}}/{{$web_config['fav_icon']->value}}"/>
         <meta property="og:title" content="{{ $shop['name']}} "/>
         <meta property="og:url" content="{{route('shopView',[$shop['id']])}}">
     @endif
     <meta property="og:description" content="{!! substr($web_config['about']->value,0,100) !!}">
 
     @if($shop['id'] != 0)
-        <meta property="twitter:card" content="{{asset('storage/app/public/shop')}}/{{$shop->image}}"/>
+        <meta property="twitter:card" content="{{asset('storage/shop')}}/{{$shop->image}}"/>
         <meta property="twitter:title" content="{{route('shopView',[$shop['id']])}}"/>
         <meta property="twitter:url" content="{{route('shopView',[$shop['id']])}}">
     @else
         <meta property="twitter:card"
-              content="{{asset('storage/app/public/company')}}/{{$web_config['fav_icon']->value}}"/>
+              content="{{asset('storage/company')}}/{{$web_config['fav_icon']->value}}"/>
         <meta property="twitter:title" content="{{route('shopView',[$shop['id']])}}"/>
         <meta property="twitter:url" content="{{route('shopView',[$shop['id']])}}">
     @endif
@@ -199,13 +199,13 @@
                 <div style="background: white">
                     @if($shop['id'] != 0)
                         <img style="width:100%; height: auto; max-height: 13.75rem; border-radius: 3px;"
-                             src="{{asset('storage/app/public/shop/banner')}}/{{$shop->banner}}"
+                             src="{{asset('storage/shop/banner')}}/{{$shop->banner}}"
                              onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                              alt="">
                     @else
                         @php($banner=\App\CPU\Helpers::get_business_settings('shop_banner'))
                         <img style="width:100%; height: auto; max-height: 13.75rem; border-radius: 3px;"
-                             src="{{asset("storage/app/public/shop")}}/{{$banner??""}}"
+                             src="{{asset("storage/shop")}}/{{$banner??""}}"
                              onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                              alt="">
                     @endif
@@ -227,12 +227,12 @@
                             <div style="display:inline-block; vertical-align:top">
                                 @if($shop['id'] != 0)
                                     <img style="height: 65px; border-radius: 2px;"
-                                         src="{{asset('storage/app/public/shop')}}/{{$shop->image}}"
+                                         src="{{asset('storage/shop')}}/{{$shop->image}}"
                                          onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                          alt="">
                                 @else
                                     <img style="height: 65px; border-radius: 2px;"
-                                         src="{{asset('storage/app/public/company')}}/{{$web_config['fav_icon']->value}}"
+                                         src="{{asset('storage/company')}}/{{$web_config['fav_icon']->value}}"
                                          onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                          alt="">
                                 @endif

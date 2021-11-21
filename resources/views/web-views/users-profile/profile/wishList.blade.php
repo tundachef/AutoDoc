@@ -280,7 +280,7 @@ a:hover{
                     <div class="product mb-2">
                         <div class="card">
                             <div class="row forPadding">
-                                <div class="wishlist_product_img col-md-2 col-lg-2 col-sm-2"> <img  src="{{asset("storage/app/public/product/th03.jpg")}}" width="100"></div>
+                                <div class="wishlist_product_img col-md-2 col-lg-2 col-sm-2"> <img  src="{{asset("storage/product/th03.jpg")}}" width="100"></div>
                                 <div class="wishlist_product_desc col-md-4 mt-4">
                                     <span class="font-name">Bee Willow Home Hand-quilted Velvet Quiit Set</span>
                                         <span class="sellerName">Bee Willow Home </span>
@@ -303,7 +303,7 @@ a:hover{
                      <div class="product mb-2 ">
                             <div class="card">
                                 <div class="row forPadding">
-                                    <div class="col-md-2 wishlist_product_img"> <img  src="{{asset("storage/app/public/product/th03.jpg")}}" width="100"></div>
+                                    <div class="col-md-2 wishlist_product_img"> <img  src="{{asset("storage/product/th03.jpg")}}" width="100"></div>
                                     <div class="col-md-4 mt-4 wishlist_product_desc">
                                         <span class="font-name">Bee Willow Home Hand-quilted Velvet Quiit Set</span>
                                          <span class="sellerName">Bee Willow Home </span>
@@ -323,7 +323,7 @@ a:hover{
                      <div class="product mb-2 ">
                             <div class="card">
                                 <div class="row forPadding">
-                                    <div class="col-md-2 wishlist_product_img"> <img  src="{{asset("storage/app/public/product/th03.jpg")}}" width="100"></div>
+                                    <div class="col-md-2 wishlist_product_img"> <img  src="{{asset("storage/product/th03.jpg")}}" width="100"></div>
                                     <div class="col-md-4 mt-4 wishlist_product_desc">
                                         <span class="font-name">Bee Willow Home Hand-quilted Velvet Quiit Set</span>
                                          <span class="sellerName">Bee Willow Home </span>
@@ -346,7 +346,7 @@ a:hover{
                                    <tr>
                                         <div class="row">
                                             <div class="col-md-3">
-                                                  <td width="30%" class="paddingtd"> <img src="{{asset("storage/app/public/product/th03.jpg")}}"  width="100"> </td>
+                                                  <td width="30%" class="paddingtd"> <img src="{{asset("storage/product/th03.jpg")}}"  width="100"> </td>
                                         <td width="60%" class="paddingtd"> <span class="font-name">Bee Willow Home Hand-quilted Velvet Quiit Set</span>
                                             <div class="product-qty"> <span class="d-block">Size : L </span></div>
                                             <div class=""> <span class="font-weight-bold amount">$345.50</span> </div>
@@ -363,7 +363,7 @@ a:hover{
                                    <tr>
                                         <div class="row">
                                             <div class="col-md-3">
-                                                  <td width="30%"> <img  src="{{asset("storage/app/public/product/th03.jpg")}}" width="100"> </td>
+                                                  <td width="30%"> <img  src="{{asset("storage/product/th03.jpg")}}" width="100"> </td>
                                         <td width="60%"> <span class="font-name">Bee Willow Home Hand-quilted Velvet Quiit Set</span>
                                             <div class="product-qty"> <span class="d-block">Size: XL</span></div>
                                         </td>

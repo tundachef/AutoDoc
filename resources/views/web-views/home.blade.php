@@ -3,12 +3,12 @@
 @section('title','Welcome To '. $web_config['name']->value.' Home')
 
 @push('css_or_js')
-    <meta property="og:image" content="{{asset('storage/app/public/company')}}/{{$web_config['web_logo']->value}}"/>
+    <meta property="og:image" content="{{asset('storage/company')}}/{{$web_config['web_logo']->value}}"/>
     <meta property="og:title" content="Welcome To {{$web_config['name']->value}} Home"/>
     <meta property="og:url" content="{{env('APP_URL')}}">
     <meta property="og:description" content="{!! substr($web_config['about']->value,0,100) !!}">
 
-    <meta property="twitter:card" content="{{asset('storage/app/public/company')}}/{{$web_config['web_logo']->value}}"/>
+    <meta property="twitter:card" content="{{asset('storage/company')}}/{{$web_config['web_logo']->value}}"/>
     <meta property="twitter:title" content="Welcome To {{$web_config['name']->value}} Home"/>
     <meta property="twitter:url" content="{{env('APP_URL')}}">
     <meta property="twitter:description" content="{!! substr($web_config['about']->value,0,100) !!}">
@@ -375,7 +375,7 @@
                                  style="height:100px">
                                 <img
                                     onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                    src="{{asset("storage/app/public/brand/$brand->image")}}" alt="{{$brand->name}}">
+                                    src="{{asset("storage/brand/$brand->image")}}" alt="{{$brand->name}}">
                             </div>
                         </a>
                     </div>
@@ -606,7 +606,7 @@
                         <a href="{{route('products',['id'=> $category['id'],'data_from'=>'category','page'=>1])}}">
                             <img style="vertical-align: middle; padding: 16%"
                                  onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                 src="{{asset("storage/app/public/category/$category->icon")}}"
+                                 src="{{asset("storage/category/$category->icon")}}"
                                  alt="{{$category->name}}">
                             <p class="text-center small"
                                style="margin-top: -20px">{{Str::limit($category->name, 17)}}</p>
@@ -643,7 +643,7 @@
                                         <img
                                             style="vertical-align: middle; padding: 2%;width:75px;height: 75px;border-radius: 50%"
                                             onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                            src="{{asset("storage/app/public/shop")}}/{{$seller->shop->image}}"
+                                            src="{{asset("storage/shop")}}/{{$seller->shop->image}}"
                                             alt="{{$seller->name}}">
                                         <p class="text-center small font-weight-bold">{{Str::limit($seller->name, 14)}}</p>
                                     </a>

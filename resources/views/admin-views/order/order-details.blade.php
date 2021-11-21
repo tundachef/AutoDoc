@@ -233,7 +233,7 @@
                                             <img
                                                 class="avatar-img" style="width: 55px;height: 55px; border-radius: 50%;"
                                                 onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                                src="{{asset('storage/app/public/company/'.\App\Model\BusinessSetting::where(['type' => 'company_web_logo'])->first()->value)}}"
+                                                src="{{asset('storage/company/'.\App\Model\BusinessSetting::where(['type' => 'company_web_logo'])->first()->value)}}"
                                                 alt="Image">
                                             <p class="sellerName">
                                                 <a style="color: black;"
@@ -247,7 +247,7 @@
                                             <img
                                                 class="avatar-img" style="width: 55px;height: 55px; border-radius: 50%;"
                                                 onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                                src="{{asset('storage/app/public/shop/'.\App\Model\Shop::where('seller_id','=',$detail->seller_id)->first()->image)}}"
+                                                src="{{asset('storage/shop/'.\App\Model\Shop::where('seller_id','=',$detail->seller_id)->first()->image)}}"
                                                 alt="Image">
                                             <p class="sellerName">
                                                 <a style="color: black;"
@@ -392,7 +392,7 @@
                                     <img
                                         class="avatar-img" style="width: 75px;height: 42px"
                                         onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                        src="{{asset('storage/app/public/profile/'.$order->customer->image)}}"
+                                        src="{{asset('storage/profile/'.$order->customer->image)}}"
                                         alt="Image">
                                 </div>
                                 <div class="media-body">

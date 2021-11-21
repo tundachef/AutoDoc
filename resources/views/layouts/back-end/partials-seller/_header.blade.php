@@ -9,10 +9,10 @@
                 <a class="navbar-brand" href="{{route('seller.dashboard.index')}}" aria-label="">
                     <img class="navbar-brand-logo" style="max-height: 42px;"
                          onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
-                         src="{{asset("storage/app/public/shop/$seller_logo")}}" alt="Logo" height="40" width="40">
+                         src="{{asset("storage/shop/$seller_logo")}}" alt="Logo" height="40" width="40">
                     <img class="navbar-brand-logo-mini" style="max-height: 42px;"
                          onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
-                         src="{{asset("storage/app/public/shop/$seller_logo")}}"
+                         src="{{asset("storage/shop/$seller_logo")}}"
                          alt="Logo" height="40" width="40">
 
                 </a>
@@ -127,10 +127,10 @@
                                      "type": "css-animation"
                                    }'>
                                 <div class="avatar avatar-sm avatar-circle">
-                                    {{-- <img src="{{asset('storage/app/public/seller/'.auth('seller')->user()->image)}}"  onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'" class="img-profile rounded-circle"> --}}
+                                    {{-- <img src="{{asset('storage/seller/'.auth('seller')->user()->image)}}"  onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'" class="img-profile rounded-circle"> --}}
                                     <img class="avatar-img"
                                          onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
-                                         src="{{asset('storage/app/public/seller/')}}/{{auth('seller')->user()->image}}"
+                                         src="{{asset('storage/seller/')}}/{{auth('seller')->user()->image}}"
                                          alt="Image Description">
                                     <span class="avatar-status avatar-sm-status avatar-status-success"></span>
                                 </div>
@@ -142,10 +142,10 @@
                                 <div class="dropdown-item-text">
                                     <div class="media align-items-center">
                                         <div class="avatar avatar-sm avatar-circle mr-2">
-                                            {{-- <img src="{{asset('storage/app/public/seller/'.auth('seller')->user()->image)}}"  onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'" class="img-profile rounded-circle"> --}}
+                                            {{-- <img src="{{asset('storage/seller/'.auth('seller')->user()->image)}}"  onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'" class="img-profile rounded-circle"> --}}
                                             <img class="avatar-img"
                                                  onerror="this.src='{{asset('assets/back-end/img/160x160/img1.jpg')}}'"
-                                                 src="{{asset('storage/app/public/seller/')}}/{{auth('seller')->user()->image}}"
+                                                 src="{{asset('storage/seller/')}}/{{auth('seller')->user()->image}}"
                                                  alt="Image Description">
                                         </div>
                                         <div class="media-body">

@@ -41,7 +41,7 @@
                     <a class="navbar-brand" href="{{route('seller.dashboard.index')}}" aria-label="Front">
                         <img onerror="this.src='{{asset('assets/back-end/img/900x400/img1.jpg')}}'"
                              class="navbar-brand-logo-mini for-seller-logo"
-                             src="{{asset("storage/app/public/shop/$seller_logo")}}" alt="Logo">
+                             src="{{asset("storage/shop/$seller_logo")}}" alt="Logo">
                     </a>
                     <!-- End Logo -->
 

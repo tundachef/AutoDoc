@@ -53,7 +53,7 @@
                 <div class="text-nowrap mb-4">
                     <a class="d-inline-block mt-n1" href="{{route('home')}}">
                         <img width="250" style="height: 60px!important;"
-                             src="{{asset("storage/app/public/company/")}}/{{ $web_config['footer_logo']->value }}"
+                             src="{{asset("storage/company/")}}/{{ $web_config['footer_logo']->value }}"
                              onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                              alt="{{ $web_config['name']->value }}"/>
                     </a>

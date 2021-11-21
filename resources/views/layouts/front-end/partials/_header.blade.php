@@ -184,14 +184,14 @@
                    href="{{route('home')}}"
                    style="min-width: 7rem;">
                     <img width="250" height="60" style="height: 60px!important;"
-                         src="{{asset("storage/app/public/company")."/".$web_config['web_logo']->value}}"
+                         src="{{asset("storage/company")."/".$web_config['web_logo']->value}}"
                          onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                          alt="{{$web_config['name']->value}}"/>
                 </a>
                 <a class="navbar-brand d-sm-none {{Session::get('direction') === "rtl" ? 'ml-2' : 'mr-2'}}"
                    href="{{route('home')}}">
                     <img width="100" height="60" style="height: 60px!important;"
-                         src="{{asset("storage/app/public/company")."/".$web_config['mob_logo']->value}}"
+                         src="{{asset("storage/company")."/".$web_config['mob_logo']->value}}"
                          onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                          alt="{{$web_config['name']->value}}"/>
                 </a>
@@ -242,7 +242,7 @@
                                 <div class="navbar-tool-icon-box bg-secondary">
                                     <div class="navbar-tool-icon-box bg-secondary">
                                         <img style="width: 40px;height: 40px"
-                                             src="{{asset('storage/app/public/profile/'.auth('customer')->user()->image)}}"
+                                             src="{{asset('storage/profile/'.auth('customer')->user()->image)}}"
                                              onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                              class="img-profile rounded-circle">
                                     </div>
@@ -341,7 +341,7 @@
                                                    onclick="location.href='{{route('products',['id'=> $category['id'],'data_from'=>'category','page'=>1])}}'">
                                                     <div>
                                                         <img
-                                                            src="{{asset("storage/app/public/category/$category->icon")}}"
+                                                            src="{{asset("storage/category/$category->icon")}}"
                                                             onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                             style="width: 18px; height: 18px; ">
                                                         <span
@@ -403,7 +403,7 @@
                                                <?php if ($category->childes->count() > 0) echo "data-toggle='dropdown'"?> href="javascript:"
                                                onclick="location.href='{{route('products',['id'=> $category['id'],'data_from'=>'category','page'=>1])}}'">
                                                 <div>
-                                                    <img src="{{asset("storage/app/public/category/$category->icon")}}"
+                                                    <img src="{{asset("storage/category/$category->icon")}}"
                                                          onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                          style="width: 18px; height: 18px; ">
                                                     <span
@@ -469,7 +469,7 @@
                                     <li class="dropdown">
                                         <a class="dropdown-item <?php if ($category->childes->count() > 0) echo "dropdown-toggle"?> "
                                            <?php if ($category->childes->count() > 0) echo "data-toggle='dropdown'"?> href="{{route('products',['id'=> $category['id'],'data_from'=>'category','page'=>1])}}">
-                                            <img src="{{asset("storage/app/public/category/$category->icon")}}"
+                                            <img src="{{asset("storage/category/$category->icon")}}"
                                                  onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                  style="width: 18px; height: 18px; ">
                                             <span

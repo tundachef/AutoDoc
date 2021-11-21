@@ -69,7 +69,7 @@
                                 <div class="col-md-12" style="padding-top: 20px">
                                     <center>
                                         <img style="width: auto;border: 1px solid; border-radius: 10px; max-height:200px;" id="viewer"
-                                        onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'" src="{{asset('storage/app/public/deal')}}/{{$deal['banner']}}" alt="banner image"/>
+                                        onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'" src="{{asset('storage/deal')}}/{{$deal['banner']}}" alt="banner image"/>
                                     </center>
                                 </div>
                             </div>

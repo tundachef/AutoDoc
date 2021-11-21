@@ -208,7 +208,7 @@
                                     <div class="row">
                                         <div class="col-md-3">
                                             <td width="30%" class="paddingtd"><img
-                                                    src="{{asset("storage/app/public/product/th03.jpg")}}" width="100">
+                                                    src="{{asset("storage/product/th03.jpg")}}" width="100">
                                             </td>
                                             <td width="60%" class="paddingtd"><span class="font-name">Bee Willow Home Hand-quilted Velvet Quiit Set</span>
                                                 <div class="product-qty"><span class="d-block">Size : L </span></div>
@@ -227,7 +227,7 @@
                                 <tr>
                                     <div class="row">
                                         <div class="col-md-3">
-                                            <td width="30%"><img src="{{asset("storage/app/public/product/th02.jpg")}}"
+                                            <td width="30%"><img src="{{asset("storage/product/th02.jpg")}}"
                                                                  width="100"></td>
                                             <td width="60%"><span class="font-name">Bee Willow Home Hand-quilted Velvet Quiit Set</span>
                                                 <div class="product-qty"><span class="d-block">Size : 43</span></div>
@@ -264,7 +264,7 @@
                                 <tr>
                                     <div class="row">
                                         <div class="col-md-3">
-                                            <td width="30%"><img src="{{asset("storage/app/public/product/th03.jpg")}}"
+                                            <td width="30%"><img src="{{asset("storage/product/th03.jpg")}}"
                                                                  width="100"></td>
                                             <td width="60%"><span class="font-name">Bee Willow Home Hand-quilted Velvet Quiit Set</span>
                                                 <div class="product-qty"><span class="d-block">Size: XL</span></div>

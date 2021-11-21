@@ -374,7 +374,7 @@
                                         <td>
                                             <img width="80"
                                                  onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                                 src="{{asset('storage/app/public/banner')}}/{{$banner['photo']}}">
+                                                 src="{{asset('storage/banner')}}/{{$banner['photo']}}">
                                         </td>
                                         <td>{{$banner->banner_type}}</td>
                                         <td><label class="switch"><input type="checkbox" class="status"
@@ -585,7 +585,7 @@
                         // $('#id').val(data.id);
                         $('#url').val(data.url);
                         $('#url').siblings('#id').val(data.id);
-                        $('#mbImageviewer').attr('src', "{{asset('storage/app/public/banner')}}" + "/" + data.photo);
+                        $('#mbImageviewer').attr('src', "{{asset('storage/banner')}}" + "/" + data.photo);
                         $('#cate-table').hide();
 
                     } else if (data.banner_type == 'Footer Banner') {
@@ -598,7 +598,7 @@
                         // $('#id').val(data.id);
                         $('#footerurl').val(data.url);
                         $('#footerurl').siblings('#id').val(data.id);
-                        $('#fbImageviewer').attr('src', "{{asset('storage/app/public/banner')}}" + "/" + data.photo);
+                        $('#fbImageviewer').attr('src', "{{asset('storage/banner')}}" + "/" + data.photo);
                         $('#cate-table').hide();
 
 
@@ -611,7 +611,7 @@
                         // $('#id').val(data.id);
                         $('#popupurl').val(data.url);
                         $('#popupurl').siblings('#id').val(data.id);
-                        $('#pbImageviewer').attr('src', "{{asset('storage/app/public/banner')}}" + "/" + data.photo);
+                        $('#pbImageviewer').attr('src', "{{asset('storage/banner')}}" + "/" + data.photo);
                         $('#cate-table').hide();
                     }
 

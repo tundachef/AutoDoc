@@ -174,7 +174,7 @@
                                      style=" border-radius: 50px; margin-{{Session::get('direction') === "rtl" ? 'right' : 'left'}}: 7px; width: 50px!important;height: 50px!important;"
                                      class="rounded-circle border"
                                      onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                     src="{{asset('storage/app/public/profile')}}/{{$customerDetail['image']}}">
+                                     src="{{asset('storage/profile')}}/{{$customerDetail['image']}}">
 
                                 <div class="col-md-10">
                                     <h5 class="font-name">{{$customerDetail->f_name. ' '.$customerDetail->l_name}}</h5>
@@ -272,7 +272,7 @@
                         @csrf
                         <div class="bg-secondary rounded-lg p-4 mb-4">
                             <div class="media align-items-center">
-                                <img id="blah" style="width: 80px; height: 80px;" src="{{asset('storage/app/public/profile')}}/{{$customerDetail['image']}}" width="90" alt="{{$customerDetail['f_name']}}">
+                                <img id="blah" style="width: 80px; height: 80px;" src="{{asset('storage/profile')}}/{{$customerDetail['image']}}" width="90" alt="{{$customerDetail['f_name']}}">
                                 <div class="media-body pl-3">
                                         <label for="files" style="cursor: pointer;"><i class="czi-loading mr-2"></i>Change avatar</label>
                                         <input id="files" name="image" style="visibility:hidden;" type="file">
