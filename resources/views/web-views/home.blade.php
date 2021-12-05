@@ -309,7 +309,7 @@
                                         <div class="d-flex align-items-center justify-content-center"
                                              style="min-width: 110px">
                                             <img style="height: 130px!important;"
-                                                 src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$deal->product['thumbnail']}}"
+                                                 src="{{ asset('storage/product/thumbnail') }}/{{$deal->product['thumbnail']}}"
                                                  onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"/>
                                         </div>
                                         <div class="flash_deal_product_details pl-2 pr-1 d-flex align-items-center">
@@ -442,7 +442,7 @@
                                                             <a href="{{route('product',$product->slug)}}"
                                                                class="image_center">
                                                                 <img
-                                                                    src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$product['thumbnail']}}"
+                                                                    src="{{ asset('storage/product/thumbnail') }}/{{$product['thumbnail']}}"
                                                                     onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                                                     class="d-block w-100" alt="...">
                                                             </a>
@@ -493,7 +493,7 @@
                         </center>
                         <div class="d-flex justify-content-center align-items-center" style="padding-top: 37px">
                             <img style="height: 206px;"
-                                 src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$deal_of_the_day->product['thumbnail']}}"
+                                 src="{{ asset('storage/product/thumbnail') }}/{{$deal_of_the_day->product['thumbnail']}}"
                                  onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                  alt="">
                         </div>
@@ -524,7 +524,7 @@
                             <h1 style="color: white"> {{ \App\CPU\translate('recommended_product') }}</h1>
                             <div class="d-flex justify-content-center align-items-center" style="padding-top: 55px">
                                 <img style="height: 206px;"
-                                     src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$product['thumbnail']}}"
+                                     src="{{ asset('storage/product/thumbnail') }}/{{$product['thumbnail']}}"
                                      onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
                                      alt="">
                             </div>
@@ -712,7 +712,7 @@
                                    href="{{route('product',$bestSell->product->slug)}}">
                                     <img style="height: 54px; width: 54px"
                                          onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                         src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$bestSell->product['thumbnail']}}"
+                                         src="{{ asset('storage/product/thumbnail') }}/{{$bestSell->product['thumbnail']}}"
                                          alt="Product"/>
                                 </a>
                                 <div class="media-body">
@@ -758,7 +758,7 @@
                                 <a class="d-block {{Session::get('direction') === "rtl" ? 'ml-2' : 'mr-2'}}" href="{{route('product',$product->slug)}}">
                                     <img style="height: 54px; width: 54px"
                                          onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                         src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$product['thumbnail']}}"
+                                         src="{{ asset('storage/product/thumbnail') }}/{{$product['thumbnail']}}"
                                          alt="Product"/>
                                 </a>
                                 <div class="media-body">
@@ -802,7 +802,7 @@
                                 <a class="d-block {{Session::get('direction') === "rtl" ? 'ml-2' : 'mr-2'}}" href="{{route('product',$top->product->slug)}}">
                                     <img style="height: 54px; width: 54px"
                                          onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                         src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$top->product['thumbnail']}}"
+                                         src="{{ asset('storage/product/thumbnail') }}/{{$top->product['thumbnail']}}"
                                          alt="Product"/>
                                 </a>
                                 <div class="media-body">
@@ -1031,4 +1031,3 @@
         })
     </script>
 @endpush
-

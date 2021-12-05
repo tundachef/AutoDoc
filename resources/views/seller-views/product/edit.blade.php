@@ -396,7 +396,7 @@
     <script src="{{asset('assets/back-end/js/spartan-multi-image-picker.js')}}"></script>
     <script>
         var imageCount = {{4-count(json_decode($product->images))}};
-        var thumbnail = '{{\App\CPU\ProductManager::product_image_path('thumbnail').'/'.$product->thumbnail??asset('assets/back-end/img/400x400/img2.jpg')}}';
+        var thumbnail = '{{asset('storage/product/thumbnail').'/'.$product->thumbnail??asset('assets/back-end/img/400x400/img2.jpg')}}';
         $(function () {
             if (imageCount > 0) {
                 $("#coba").spartanMultiImagePicker({

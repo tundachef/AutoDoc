@@ -127,7 +127,7 @@
                             <img
                                 class="avatar avatar-xxl avatar-4by3 {{Session::get('direction') === "rtl" ? 'ml-4' : 'mr-4'}}"
                                 onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
-                                src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$product['thumbnail']}}"
+                                src="{{asset('storage/product/thumbnail') }}//{{$product['thumbnail']}}"
                                 alt="Image Description">
 
                             <div class="d-block">
