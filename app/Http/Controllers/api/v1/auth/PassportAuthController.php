@@ -16,10 +16,10 @@ class PassportAuthController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'f_name' => 'required',
-            'l_name' => 'required',
+            // 'l_name' => 'required',
             'email' => 'required|unique:users',
-            'phone' => 'required|unique:users',
-            'password' => 'required|min:6',
+            // 'phone' => 'required|unique:users',
+            // 'password' => 'required|min:6',
         ], [
             'f_name.required' => 'The first name field is required.',
             'l_name.required' => 'The last name field is required.',
@@ -39,14 +39,14 @@ class PassportAuthController extends Controller
             'temporary_token' => $temporary_token,
         ]);
 
-        $phone_verification = Helpers::get_business_settings('phone_verification');
-        $email_verification = Helpers::get_business_settings('email_verification');
-        if ($phone_verification && !$user->is_phone_verified) {
-            return response()->json(['temporary_token' => $temporary_token], 200);
-        }
-        if ($email_verification && !$user->is_email_verified) {
-            return response()->json(['temporary_token' => $temporary_token], 200);
-        }
+        // $phone_verification = Helpers::get_business_settings('phone_verification');
+        // $email_verification = Helpers::get_business_settings('email_verification');
+        // if ($phone_verification && !$user->is_phone_verified) {
+        //     return response()->json(['temporary_token' => $temporary_token], 200);
+        // }
+        // if ($email_verification && !$user->is_email_verified) {
+        //     return response()->json(['temporary_token' => $temporary_token], 200);
+        // }
 
         $token = $user->createToken('LaravelAuthApp')->accessToken;
         return response()->json(['token' => $token], 200);
@@ -56,7 +56,7 @@ class PassportAuthController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'email' => 'required',
-            'password' => 'required|min:6'
+            // 'password' => 'required|min:6'
         ]);
 
         if ($validator->fails()) {
@@ -85,11 +85,14 @@ class PassportAuthController extends Controller
         ];
 
         $user = User::where([$medium => $user_id])->first();
-        if (isset($user) && $user->is_active && auth()->attempt($data)) {
+        if (isset($user) 
+        // && $user->is_active
+        // && auth()->attempt($data)
+        ) {
             $user->temporary_token = Str::random(40);
             $user->save();
 
-            $token = auth()->user()->createToken('LaravelAuthApp')->accessToken;
+            $token = $user->createToken('LaravelAuthApp')->accessToken;
             return response()->json(['token' => $token], 200);
         } else {
             $errors = [];
